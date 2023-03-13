@@ -8,6 +8,8 @@ import com.models.Teacher;
 
 // The 'Component' abstract class from Decorator Pattern
 public abstract class BasicPanel extends JPanel {
+	public BasicPanel() {
+	}
 	private static final long serialVersionUID = 1L;
 	
 	public abstract void setBackgroundColor();

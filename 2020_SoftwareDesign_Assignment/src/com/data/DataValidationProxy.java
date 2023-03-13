@@ -75,11 +75,11 @@ public class DataValidationProxy implements IOperations {
 			return false;
 		}
 		else if (!teacher.getPersonalID().matches(VALID_PERSONAL_ID_PATTERN)) {
-			Message.displayWarningMessage("Personal ID must contains only digits!");
+			Message.displayWarningMessage("Phone Number must contains only digits!");
 			return false;
 		}
 		else if (teacher.getPersonalID().length() != PERSONAL_ID_LENGTH) {
-			Message.displayWarningMessage("Personal ID must contains exactly 10 digits!");
+			Message.displayWarningMessage("Phone Number must contains exactly 10 digits!");
 			return false;
 		}	
 		
@@ -99,7 +99,7 @@ public class DataValidationProxy implements IOperations {
 	private boolean isPersonalIDAlreadyExist(String personalID) {
 		for (Teacher teacher : this.teacherAdapter.getAllTeachers()) {
 			if (teacher.getPersonalID().equals(personalID)) {
-				Message.displayWarningMessage("Personal ID already exists. It must be unique!");
+				Message.displayWarningMessage("Phone Number already exists. It must be unique!");
 				return true;
 			}
 		}

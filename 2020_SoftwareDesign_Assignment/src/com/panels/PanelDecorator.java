@@ -3,6 +3,7 @@ package com.panels;
 import java.util.List;
 
 import com.models.Teacher;
+import java.awt.Color;
 
 // The 'Decorator' abstract class
 public abstract class PanelDecorator extends BasicPanel {
@@ -11,6 +12,7 @@ public abstract class PanelDecorator extends BasicPanel {
 	private BasicPanel panel;
 	
 	protected PanelDecorator(BasicPanel panel) {
+		setBackground(Color.BLACK);
 		this.setPanel(panel);
 	}
 	

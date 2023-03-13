@@ -60,14 +60,28 @@ public class UniversityPanel extends BasicPanel {
 	private final JButton btnNewButton = new JButton("Export");
 
 	public UniversityPanel() {
+		setForeground(Color.WHITE);
+		setBackground(Color.BLACK);
 		this.defaultTableModel.setColumnIdentifiers(COLUMN_NAMES);
 		this.table.setModel(this.defaultTableModel);
 		this.scrollPane.setPreferredSize(new Dimension(SCROLL_PANE_WIDHT, SCROLL_PANE_HEIGHT));
+		addNewTeacherButton.setBackground(Color.WHITE);
+		addNewTeacherButton.setForeground(Color.BLACK);
 		this.add(this.addNewTeacherButton);
+		showAllTeachersButton.setBackground(Color.WHITE);
+		showAllTeachersButton.setForeground(Color.BLACK);
 		this.add(this.showAllTeachersButton);
+		updateTeacherButton.setBackground(Color.WHITE);
+		updateTeacherButton.setForeground(Color.BLACK);
 		this.add(this.updateTeacherButton);
+		deleteTeacherButton.setBackground(Color.WHITE);
+		deleteTeacherButton.setForeground(Color.BLACK);
 		this.add(this.deleteTeacherButton);
+		sortTeacherButton.setBackground(Color.WHITE);
+		sortTeacherButton.setForeground(Color.BLACK);
 		this.add(this.sortTeacherButton);
+		btnNewButton.setBackground(Color.WHITE);
+		btnNewButton.setForeground(Color.BLACK);
 		this.add(this.btnNewButton);
 		this.btnNewButton.addActionListener(new ActionListener() {
 		 
